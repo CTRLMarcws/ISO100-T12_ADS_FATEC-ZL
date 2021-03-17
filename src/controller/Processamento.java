@@ -38,7 +38,7 @@ public class Processamento extends Thread
 
 		if (tempo > 1000)
 		{
-			System.out.println(timeout(1, tempo));
+			System.err.println(timeout(1, tempo));
 		}
 		else
 		{
@@ -76,7 +76,7 @@ public class Processamento extends Thread
 		}
 		if (tempo > 2500)
 		{
-			System.out.println(timeout(0, tempo));
+			System.err.println(timeout(0, tempo));
 		}
 		else
 		{
@@ -100,7 +100,7 @@ public class Processamento extends Thread
 	{
 		if (qntIngressos > ingressos)
 		{
-			System.out.println("#" + idComprador +" - tentou comprar: "+ qntIngressos
+			System.err.println("#" + idComprador +" - tentou comprar: "+ qntIngressos
 					+ ", quantidade não disponivel.");
 		}
 		else
